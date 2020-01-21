@@ -1,0 +1,143 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: zookeeper-0
+  labels:
+    name: zookeeper
+spec:
+  capacity:
+    storage: 5Gi
+  storageClassName: hdfs
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: zookeeper-0
+    fsType: ext4
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: zookeeper-1
+  labels:
+    name: zookeeper
+spec:
+  capacity:
+    storage: 5Gi
+  storageClassName: hdfs
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: zookeeper-1
+    fsType: ext4
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: zookeeper-2
+  labels:
+    name: zookeeper
+spec:
+  capacity:
+    storage: 5Gi
+  storageClassName: hdfs
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: zookeeper-2
+    fsType: ext4
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: hdfs-journalnode-k8s-0
+  labels:
+    name: hdfs-journalnode-k8s
+spec:
+  capacity:
+    storage: 20Gi
+  storageClassName: hdfs
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: hdfs-journalnode-k8s-0
+    fsType: ext4
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: hdfs-journalnode-k8s-1
+  labels:
+    name: hdfs-journalnode-k8s
+spec:
+  capacity:
+    storage: 20Gi
+  storageClassName: hdfs
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: hdfs-journalnode-k8s-1
+    fsType: ext4
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: hdfs-journalnode-k8s-2
+  labels:
+    name: hdfs-journalnode-k8s
+spec:
+  capacity:
+    storage: 20Gi
+  storageClassName: hdfs
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: hdfs-journalnode-k8s-2
+    fsType: ext4
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: hdfs-namenode-k8s-0
+  labels:
+    name: hdfs-namenode-k8s
+spec:
+  capacity:
+    storage: 100Gi
+  storageClassName: hdfs
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: hdfs-namenode-k8s-0
+    fsType: ext4
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: hdfs-namenode-k8s-1
+  labels:
+    name: hdfs-namenode-k8s
+spec:
+  capacity:
+    storage: 100Gi
+  storageClassName: hdfs
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: hdfs-namenode-k8s-1
+    fsType: ext4
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: hdfs-krb5-k8s
+  labels:
+    name: hdfs-krb5-k8s
+spec:
+  capacity:
+    storage: 20Gi
+  storageClassName: hdfs
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: hdfs-krb5-k8s
+    fsType: ext4
